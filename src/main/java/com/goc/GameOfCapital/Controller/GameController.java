@@ -36,8 +36,10 @@ public class GameController {
 
         /**
          * for update score
+         * receive game score
+         * send the total score data back
          */
-//    @PostMapping("/api...")
+//    @PutMapping("/api...")
 //    public ResponseEntity<Integer> getScore(){
 //        return new ResponseEntity<>(gameService.)
 //
