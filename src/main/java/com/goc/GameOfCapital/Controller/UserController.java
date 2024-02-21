@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/api/users/{username}/{password}")
+    @PostMapping("/api/users/user?name={username}&password={password}")
     public ResponseEntity<Optional<User>> createUser(@PathVariable String username,@PathVariable String password){
 
         if(userService.searchByUserName(username).isEmpty()){
@@ -38,7 +38,7 @@ public class UserController {
      * @param username
      * @return
      */
-    @PostMapping("/api/sessions/{username}/{password}")   //named formal???
+    @PostMapping("/api/sessions/user?name={username}&password={password}")
     public ResponseEntity<Optional<User>> userLogin(@PathVariable String username, @PathVariable String password){
 //and password is correct
 

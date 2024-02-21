@@ -25,7 +25,7 @@ public class GameController {
 
 
 
-    @GetMapping("/api/sessions/{username}/{password}/game")
+    @GetMapping("/api/sessions/user?name={username}&password={password}/game")
     public ResponseEntity<List<Game>> getGame(@PathVariable String username, @PathVariable String password) {
 
         if (userService.userVerfied(username, password)) {
@@ -34,14 +34,5 @@ public class GameController {
             return new ResponseEntity<List<Game>>(HttpStatus.UNPROCESSABLE_ENTITY);
         }
 
-        /**
-         * for update score
-         * receive game score
-         * send the total score data back
-         */
-//    @PutMapping("/api...")
-//    public ResponseEntity<Integer> getScore(){
-//        return new ResponseEntity<>(gameService.)
-//
-//    }
+
     }}
