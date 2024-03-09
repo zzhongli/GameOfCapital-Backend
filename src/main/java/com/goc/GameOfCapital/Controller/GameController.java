@@ -23,8 +23,6 @@ public class GameController {
     @Autowired
     private UserService userService;
 
-
-
     @GetMapping("/api/sessions/user?name={username}&password={password}/game")
     public ResponseEntity<List<Game>> getGame(@PathVariable String username, @PathVariable String password) {
 
