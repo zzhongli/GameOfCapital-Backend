@@ -15,6 +15,7 @@ public class Game {
 
     @Id
     private ObjectId id;
+
     private int questionNumber;
 
     private String question;
