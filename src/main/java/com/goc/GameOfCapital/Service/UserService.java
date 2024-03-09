@@ -28,7 +28,6 @@ public class UserService {
 
     }
 
-
     public String findPasswordByName(String username) {
         List<User> userList = userReporistory.findAll();
         String password = new String();

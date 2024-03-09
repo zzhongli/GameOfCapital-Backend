@@ -20,7 +20,6 @@ public class GameService {
 
     }
 
-
     /**
      * in the user repository
      * @return
