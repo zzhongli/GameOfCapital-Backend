@@ -19,7 +19,6 @@ public class Game {
     private int questionNumber;
 
     private String question;
-
     private String correctAnswer;
 
     private String wrongAnswer1;
